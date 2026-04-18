@@ -5,7 +5,7 @@
 
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Calendar, Users, Utensils, Heart, ChevronRight } from "lucide-react";
-import { useEffect, useState, ReactNode } from "react";
+import { useEffect, useState } from "react";
 
 const CONTACT_INFO = {
   name: "ZOFKOR Korycka Z.",
@@ -15,7 +15,7 @@ const CONTACT_INFO = {
   email: "zofkor@op.pl"
 };
 
-const Section = ({ title, subtitle, children, className = "", id }: { title: string, subtitle?: string, children: ReactNode, className?: string, id?: string }) => (
+const Section = ({ title, subtitle, children, className = "", id }) => (
   <section id={id} className={`py-20 px-6 max-w-7xl mx-auto ${className}`}>
     <div className="text-center mb-16">
       <motion.h2 
@@ -302,4 +302,3 @@ export default function App() {
     </div>
   );
 }
-
