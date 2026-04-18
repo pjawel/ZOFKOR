@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+  --font-serif: 'Georgia', serif;
+  
+  --color-brand-gold: #8a6d3b;
+  --color-brand-beige: #fcfbf9;
+  --color-brand-dark: #1a1a1a;
+  --color-brand-text: #2d2d2d;
+  --color-brand-border: #e0ddd5;
+  --color-brand-secondary-bg: #f4f0e6;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-beige text-brand-text font-sans antialiased;
+  }
+}
